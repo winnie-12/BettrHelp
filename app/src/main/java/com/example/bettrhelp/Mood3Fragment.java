@@ -345,9 +345,9 @@ public class Mood3Fragment extends Fragment {
                     MoodRecord.clearData();
 
                     // Navigate back to HomeFragment
-                    getParentFragmentManager().beginTransaction()
-                            .replace(R.id.mood_inner_fragment_container, new HomeFragment())
-                            .commit();
+                    if (getActivity() instanceof MainActivity) {
+                        ((MainActivity) getActivity()).navigateToHomeFragment();
+                    }
                 })
                 .addOnFailureListener(e -> {
                     Toast.makeText(getContext(), "Failed to save record: " + e.getMessage(), Toast.LENGTH_LONG).show();
