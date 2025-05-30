@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mood"
+        android:title="Mood"
+        android:icon="@drawable/icon_mood"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/selfCare"
+        android:title="Self Care"
+        android:icon="@drawable/icon_care"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/chillSpace"
+        android:title="Chill Space"
+        android:icon="@drawable/icon_chill"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/balance"
+        android:title="Balance"
+        android:icon="@drawable/icon_balance"
+        tools:ignore="HardcodedText" />
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "566284371604",
+    "project_id": "bettrhelp-bci3283",
+    "storage_bucket": "bettrhelp-bci3283.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566284371604:android:05bef6a04b73a4e131d681",
+        "android_client_info": {
+          "package_name": "com.example.bettrhelp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyIJXpuCd0l6InMhCH_if711l_-EYJEss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566284371604:android:2783b72deb257d9531d681",
+        "android_client_info": {
+          "package_name": "com.example.bettrhelp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyIJXpuCd0l6InMhCH_if711l_-EYJEss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

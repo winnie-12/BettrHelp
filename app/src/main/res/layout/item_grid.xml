@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:id="@+id/itemImage"
+        android:background="@null"
+        android:contentDescription="@string/item_image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/emo_happy"/>
+
+    <TextView
+        android:id="@+id/itemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/label"
+        android:textAlignment="center"
+        android:textColor="@color/mainColor"
+        android:textSize="9sp" />
+
+
+
+</LinearLayout>

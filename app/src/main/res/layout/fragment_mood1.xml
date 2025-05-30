@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <include layout="@layout/toolbar_mood"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/textFeeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/how_are_you_feeling"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonEmojiGreat"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/emoji_great"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emoji_great"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textGreat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/great"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonEmojiGood"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/emoji_good"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emoji_good"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textGood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/good"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonEmojiOkay"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/emoji_okay"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emoji_okay"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textOkay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/okay"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonEmojiNotOkay"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/emoji_not_okay"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emoji_not_okay"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textNotOkay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/not_okay"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonEmojiBad"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/emoji_bad"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emoji_bad"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textBad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/bad"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStressLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textStressLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/stress_level"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarStressLevel"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="5dp"
+                        android:progressDrawable="@drawable/seekbar_progress"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/seekbar_thumb" />
+
+                    <TextView
+                        android:id="@+id/textStressLevelValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="TextView"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp"
+                        android:visibility="invisible"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEnergyLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textEnergyLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/energy_level"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarEnergyLevel"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="5dp"
+                        android:progressDrawable="@drawable/seekbar_progress"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/seekbar_thumb" />
+
+                    <TextView
+                        android:id="@+id/textEnergyLevelValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="TextView"
+                        android:textColor="@color/textColor"
+                        android:textSize="11sp"
+                        android:visibility="invisible"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonNextMood2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/mainColor"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/next"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

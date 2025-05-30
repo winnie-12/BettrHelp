@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+        <include layout="@layout/toolbar_mood" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                        <TextView
+                            android:id="@+id/textWhatUDone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:text="@string/what_have_you_done"
+                            android:textColor="@color/textColor"
+                            android:textSize="18sp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardEmotions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutEmotions"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="20dp">
+
+                                        <TextView
+                                            android:id="@+id/textEmotions"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="@string/emotions"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp" />
+
+                                        <com.example.bettrhelp.ExpandableHeightGridView
+                                            android:id="@+id/gridEmotions"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:numColumns="4"
+                                            android:gravity="center"
+                                            android:verticalSpacing="15dp"
+                                            android:stretchMode="columnWidth"/>
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardEvents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutEvents"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="20dp">
+
+                                        <TextView
+                                            android:id="@+id/textEvents"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="@string/events"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp" />
+
+                                        <com.example.bettrhelp.ExpandableHeightGridView
+                                            android:id="@+id/gridEvents"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:numColumns="4"
+                                            android:gravity="center"
+                                            android:verticalSpacing="15dp"
+                                            android:stretchMode="columnWidth"/>
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardPeople"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutPeople"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="20dp">
+
+                                        <TextView
+                                            android:id="@+id/textPeople"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="@string/people"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp" />
+
+                                        <com.example.bettrhelp.ExpandableHeightGridView
+                                            android:id="@+id/gridPeople"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:numColumns="4"
+                                            android:gravity="center"
+                                            android:verticalSpacing="15dp"
+                                            android:stretchMode="columnWidth"/>
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardSchool"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutSchool"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="20dp">
+
+                                        <TextView
+                                            android:id="@+id/textSchool"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="@string/school"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp" />
+
+                                        <com.example.bettrhelp.ExpandableHeightGridView
+                                            android:id="@+id/gridSchool"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:numColumns="4"
+                                            android:gravity="center"
+                                            android:verticalSpacing="15dp"
+                                            android:stretchMode="columnWidth"/>
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardHealth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutHealth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="20dp">
+
+                                        <TextView
+                                            android:id="@+id/textHealth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="10dp"
+                                            android:fontFamily="@font/roboto"
+                                            android:text="@string/health"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/textColor"
+                                            android:textSize="15sp" />
+
+                                        <com.example.bettrhelp.ExpandableHeightGridView
+                                            android:id="@+id/gridHealth"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:numColumns="4"
+                                            android:gravity="center"
+                                            android:verticalSpacing="15dp"
+                                            android:stretchMode="columnWidth"/>
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <Button
+                            android:id="@+id/buttonNextMood3"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/mainColor"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/next"
+                            android:textSize="14sp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>
